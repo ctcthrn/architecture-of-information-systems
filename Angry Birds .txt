@@ -1,0 +1,30 @@
+@startuml
+
+class gamer{
+nickname: string
+level: int
+}
+
+class slingshot{
+x: int
+y: int
+}
+
+class angry_birds{
+number: int
+}
+
+class pigs{
+number: int
+}
+
+class level{
+level: int
+}
+
+gamer --> slingshot : pulls
+gamer --> level : pass
+slingshot --> angry_birds : shoot
+angry_birds --> pigs : kill
+
+@enduml
